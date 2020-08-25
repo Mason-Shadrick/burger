@@ -1,0 +1,17 @@
+body {
+  background-color: cornsilk;
+}
+
+img {
+  width: 75%;
+}
+
+h1{
+  font-weight: bolder;
+  color: dodgerblue;
+}
+
+footer{
+  text-align: center;
+  color: darkgray;
+}

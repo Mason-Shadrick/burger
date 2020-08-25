@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>Burger Town!</title>
-		<script src="https://code.jquery.com/jquery.js"></script>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
+    <meta charset="UTF-8">
+    <title>Eat-da-Burger</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/burger.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+     <!-- Custom Styling -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  
+    <!-- Page Container -->
+    <div class="container">
+      
+      <br>
+
+      <!-- Burger Image -->
+      <center>
+        <div class="row">
+          <img src="/assets/images/krabby-patty.jpg">
+        </div>
+      </center>
+
+      <!-- Page Title -->
+      <center>
+        <h1 >Eat da Burger!</h1>
+      </center>
+      
+      <br>
+      
+
+      <!-- Burger Content from index.handlebars -->
+      {{{body}}}
+
+
+      <br><br>
+
+      <!-- Input New Burgers Form -->
+      <form action="burger/create" method="POST"> 
+        
+        <!-- Text Area Input -->
+        <div class="row">
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div> 
+
+          <!-- Burger Input Box -->
+          <div class="form-group col-md-6">
+            <center><label for="new_burger">Request a new burger and place your order!</label></center>
+            <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
+          </div>
+
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div> 
+        </div>
+      
+        <!-- Submit Button -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
+        </center>
+
+      </form>
+
+      <br>
+
+    </div>
+
+    <footer>Hint: Whining never gets you anything!</footer>
+</body>
 </html>
